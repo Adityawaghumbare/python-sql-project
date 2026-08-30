@@ -44,32 +44,40 @@
 # 6. Calculate average
 
 
-students = [                                       # -- Creation of list of 5-6 students
-    {"Name" : "Aditya" , "Marks" : 90 },
-    {"Name" : "Kapil" , "Marks" : 75 },
-    {"Name" : "Yash" , "Marks" : 80 },
-    {"Name" : "Anuj" , "Marks" : 65 },
-    {"Name" : "Atharva" , "Marks" : 70 },
-    {"Name" : "Pranav" , "Marks" : 90 }
-]                                                     # -- Store name + marks using dictionaries
+# students = [                                       # -- Creation of list of 5-6 students
+#     {"Name" : "Aditya" , "Marks" : 90 },
+#     {"Name" : "Kapil" , "Marks" : 75 },
+#     {"Name" : "Yash" , "Marks" : 80 },
+#     {"Name" : "Anuj" , "Marks" : 65 },
+#     {"Name" : "Atharva" , "Marks" : 70 },
+#     {"Name" : "Pranav" , "Marks" : 90 }
+# ]                                                     # -- Store name + marks using dictionaries
 
 
-for s in students :                                    # -- Print all students name and marks
-    print(f"Name : {s["Name"]}  |  Marks : {s["Marks"]}")
-print(" ")
+# for s in students :                                    # -- Print all students name and marks
+#     print(f"Name : {s["Name"]}  |  Marks : {s["Marks"]}")
+# print(" ")
 
-highest = max(s["Marks"] for s in students)           # -- Find highest marks
-print(f"Highest Marks : {highest} \n")
+# highest = max(s["Marks"] for s in students)           # -- Find highest marks
+# print(f"Highest Marks : {highest} \n")
 
-lowest = min(s["Marks"] for s in students)            # -- Find lowest marks
-print(f"Lowest Marks : {lowest} \n")
+# lowest = min(s["Marks"] for s in students)            # -- Find lowest marks
+# print(f"Lowest Marks : {lowest} \n")
 
-marks = []
-for s in students:
-    marks.append(s["Marks"])
+# marks = []
+# for s in students:
+#     marks.append(s["Marks"])
 
-total = sum(marks)
-print(f"Sum = {total}\n")
+# total = sum(marks)
+# print(f"Sum = {total}\n")
 
-avg = total/(len(marks))                          # -- Calculate average
-print(f"Average : {avg}")
+# avg = total/(len(marks))                          # -- Calculate average
+# print(f"Average : {avg}")
+
+names = ["Aditya", "Kapil", "Yash"]
+marks = [85, 72, 91]
+combined = list(zip(names, marks))
+print(combined)  
+
+for index, name in enumerate(names):
+    print(f"Rank : {index+1} |", name)
