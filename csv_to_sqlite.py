@@ -10,7 +10,6 @@ with open('students.csv','r') as f:
       students.append(row)
       print(row)
 
-
 print(students[0]["marks"] + 15)
 
 for s in students:
